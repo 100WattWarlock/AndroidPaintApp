@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.example.btr.paintapp.ColorPreview
+        android:id="@+id/color_preview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/color_swatch_margins_small"/>
+
+    <SeekBar
+        android:id="@+id/seek_bar_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:progressDrawable="@android:color/transparent"
+        android:max="13"
+        android:progress="1"
+        android:background="@drawable/color_slider"/>
+
+</LinearLayout>
